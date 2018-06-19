@@ -60,6 +60,9 @@
     -moz-transition: all 0.15s linear;
     transition: all 0.15s linear;
 	}
+	.day-budget p {
+		color: white;
+	}
 
 	</style>
 
