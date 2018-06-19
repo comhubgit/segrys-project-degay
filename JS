@@ -3,6 +3,7 @@
 	let button = document.getElementById('budget-btn');
 	let days = document.getElementById('days-input');
 	let dayBudget = document.getElementById('day-budget');
+	let elem = document.createElement('p');
 	button.addEventListener('click', function() {
 		let budget = field.value;
 		let dayz = days.value;
@@ -14,11 +15,8 @@
 			alert('В поле дней введено не число!')
 		}
 		dayzBudget = budget / dayz;
-		Math.floor(dayzBudget);
-});
-		function dayBudgetPopup () {
-			document.getElementById('day-budget').style.display = "block";	
-		}
-
+		let elem = document.createElement('p');
+		dayBudget.appendChild(elem).innerHTML = Math.floor(dayzBudget);
+	});
 </script>
 </body>
