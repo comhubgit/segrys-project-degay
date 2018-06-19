@@ -1,1 +1,24 @@
+<script type="text/javascript">
+	let field = document.getElementById('budget-input');
+	let button = document.getElementById('budget-btn');
+	let days = document.getElementById('days-input');
+	let dayBudget = document.getElementById('day-budget');
+	button.addEventListener('click', function() {
+		let budget = field.value;
+		let dayz = days.value;
+		let dayzBudget = dayBudget.value;  
+		if (isNaN(budget)) {
+			alert('В поле бюджета введено не число!')
+		}
+		if (isNaN(dayz)) {
+			alert('В поле дней введено не число!')
+		}
+		dayzBudget = budget / dayz;
+		Math.floor(dayzBudget);
+});
+		function dayBudgetPopup () {
+			document.getElementById('day-budget').style.display = "block";	
+		}
 
+</script>
+</body>
